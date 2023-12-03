@@ -2,12 +2,13 @@
   min-height: 200vh;
   margin: 0;
   padding: 0;
+  Overflow-y: hidden; /*stopt vertical scroll*/
   font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
-  overflow: hidden;
-  position: relative;
+  overflow: hidden; /*stopt horizontal scroll*/
+  position: relative; /*stopt horizontal scroll*/
   min-height: 100vh;
   width: 100%;
 }
@@ -33,18 +34,12 @@ header .content {
   text-align: center;
 }
 
-header .content p {
-  margin-bottom: 2.5em;
-  color: #9ea2a5;
-  font-size: 1.2em;
-}
-
 header .btn {
   text-decoration: none;
   color: #fff;
-  background: #ee1818;
+  background: #fdd402;
   padding: 0.8em 1.5em;
-  border: 3px #f52525 solid;
+  border: 3px #fdd402 solid;
   border-radius: 30px;
   letter-spacing: 0.3rem;
   -webkit-transition: 0.3;
@@ -52,5 +47,15 @@ header .btn {
 }
 
 header .btn:hover {
-  background: #d31010;
+  background: #fdd402;
+}
+
+/* PAGES */
+
+header .basepage {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
 }

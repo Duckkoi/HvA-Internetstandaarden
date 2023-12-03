@@ -1,16 +1,8 @@
-const box = document.querySelector('.box')
-const boxContent = document.querySelector('.content');
-const sensitivity = 15;
-
-box.addEventListener('mousemove', addCoors);
-boxContent.addEventListener('mousemove', addCoors);
-
 function addCoors(e) {
+    const sensitivity = 15;
     const x = e.clientX;
     const y = e.clientY;
-box.style.backgroundPosition = 
-
-    $(x / sensitivity)px $(y / sensitivity)px
-    ;
+    e.target.style.backgroundPosition = String((x - window.innerWidth/2) / sensitivity) + "px " + String((y - window.innerHeight/2) / sensitivity) + "px";
 
 }
+document.getElementsByClassName("box")[0].addEventListener("mousemove", (e) => addCoors(e))
