@@ -1,6 +1,71 @@
  body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif
+ }
+ 
+ .startbody {
+  Overflow-y: hidden; /*stopt vertical scroll*/
+}
 
+.startheader {
+  overflow: hidden; /*stopt horizontal scroll*/
+  position: relative; /*stopt horizontal scroll*/
+  min-height: 100vh;
+  width: 100%;
+}
+
+.box {   /*background*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-image: url("images/background1.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  width: 130%;
+  height: 130%;
+  filter: brightness(30%);
+}
 
+.content {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%); /*centreert de button */
+  text-align: center; /* welcome text position*/
+  color: #fff;
+  font-family:'Times New Roman', Times, serif
+}
+
+.btn {
+  text-decoration: none; /*haalt link underscore _ weg*/
+  color: #fff;
+  background: #fdd402;
+  padding: 0.8em 1.5em;
+  border: 3px #fdd402 solid;
+  border-radius: 30px;
+  letter-spacing: 0.3rem;
+  -webkit-transition: 0.3;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #fdd402;
+}
+
+/* PAGES */
+
+
+.pageheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%
+}
+
+.navlinks {
+  list-style: none;
+  display: inline-block;
+  padding: 0px 20px;
 }
