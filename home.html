@@ -1,72 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
     <title>Home</title>
-</head>
-<body>
+  </head>
+
+  <body>
     <header class="pageheader">
+      <nav class="main-nav">
+        <ul>
+          <!--Head item 1-->
+          <li><a href="home.html">Home</a></li>
 
-        <nav class="navbar">
-            <a href="home.html">Home</a>
-            <div class="dropdown">
-                <button class="dropbtn">World</button>
-                <div class="dropdown-content">
-                  <a href="worldexplanation.html">World explanation</a>
-                  <a href="#">Spirit System</a>
-                  <a href="#">Locations</a>
-                </div>
-              </div>
+          <!--Head item 2-->
+          <li class="main-dropdown">
+            <a>World</a>
+            <div class="main-menu">
+              <div class="column">
+                <ul>
 
-            <div class="dropdown">
-              <button class="dropbtn">Characters</button>
-              <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                  <li>
+                    <!--Main item 1-->
+                    <a href="worldexplanation.html" class="main-item">World Explanation</a>
+                  </li>
+
+                  <!--Main item 2-->
+                  <li class="sub-dropdown">
+                    <a href="#" class="main-item">Spirits</a>
+                    <div class="sub-menu">
+                      <ul>
+                        <li><a href="#">Spirit Den</a></li>
+                        <li><a href="#">Spirit Tinkering</a></li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <!--Main item 3-->
+                  <li>
+                    <a href="#" class="main-item">Materials</a>
+                  </li>
+
+                  <!--Main item 4-->
+                  <li class="sub-dropdown">
+                    <a href="#" class="main-item">Locations</a>
+                    <div class="sub-menu">
+                      <ul>
+                        <li><a href="#">The Wilds</a></li>
+                        <li><a href="#">Civilizations</a></li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <!-- Add more items as needed -->
+                </ul>
               </div>
             </div>
+          </li>
 
-            <div class="dropdown">
-                <button class="dropbtn">Ideas</button>
-                <div class="dropdown-content">
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
-                </div>
-              </div>
+          <!--Head item 3-->
+          <li class="main-dropdown">
+            <a>Characters</a>
+            <div class="main-menu">
+              <div class="column">
+                <ul>
 
-            <div class="dropdown">
-              <button class="dropbtn">Extra</button>
-              <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                  <!--Main item 1-->
+                  <li class="sub-dropdown">
+                    <a href="#" class="main-item">Protagonists</a>
+                    <div class="sub-menu">
+                      <ul>
+                        <li><a href="#">Amir</a></li>
+                        <li><a href="#">Azhar</a></li>
+                        <li><a href="#">Sarah</a></li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <!--Main item 2-->
+                  <li>
+                    <a href="#" class="main-item">Other</a>
+                  </li>
+
+                  <!-- Add more items as needed -->
+                </ul>
               </div>
             </div>
-        </nav>
+          </li>
 
-        <nav>
-            <ul class="navlinks">
-                <li><a href="worldexplanation.html">World</a></li>
-                <li><a href="#">Characters</a></li>
-                <li><a href="#">Ideas</a></li>
-                <li><a href="#">Extra</a></li>
-            </ul>
-        </nav>
+          <!--Head item 4-->
+          <li class="main-dropdown">
+            <a>Ideas</a>
+            <div class="main-menu">
+              <div class="column">
+                <ul>
+
+                  <!--Main item 1-->
+                  <li>
+                    <a href="#" class="main-item">Abilities</a>
+                  </li>
+
+                  <!--Main item 2-->
+                  <li>
+                    <a href="#" class="main-item">Characters</a>
+                  </li>
+
+                  <!--Main item 3-->
+                  <li>
+                    <a href="#" class="main-item">Locations</a>
+                  </li>
+
+                  <!--Main item 4-->
+                  <li class="sub-dropdown">
+                    <a href="#" class="main-item">Life</a>
+                    <div class="sub-menu">
+                      <ul>
+                        <li><a href="#">Animals</a></li>
+                        <li><a href="#">Plants</a></li>
+                        <li><a href="#">Other</a></li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <!--Main item 5-->
+                  <li class="sub-dropdown">
+                    <a href="#" class="main-item">Beliefs</a>
+                    <div class="sub-menu">
+                      <ul>
+                        <li><a href="#">Theories</a></li>
+                        <li><a href="#">Religions</a></li>
+                        <li><a href="#">Other</a></li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <!-- Add more items as needed -->
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <!--Head item 5-->
+          <li class="main-dropdown">
+            <a>Extra</a>
+            <div class="main-menu">
+              <div class="column">
+                <ul>
+
+                  <!--Main item 2-->
+                  <li>
+                    <a href="#" class="main-item">Maps</a>
+                  </li>
+
+                  <!-- Add more items as needed -->
+                </ul>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </nav>
     </header>
 
+    <h2>Vagrant</h2>
+      <p>Vagrant is a story about a mysterious boy who wakes up in a desert village, 
+        he doesn't interact with anything or anyone and only does what he is told,
+        until he dissapears yet again only a few weeks later.</p>
 
-    <h2>aaa</h2>
-    
     <footer>
-        <ul>
-            <li>Ismail Bchiri</li>
-            <li>500930822</li>
-            <li>ismailbchirii@gmail.com</li>
-        </ul>
+      <ul>
+        <li>Ismail Bchiri</li>
+        <li>500930822</li>
+        <li>ismailbchirii@gmail.com</li>
+      </ul>
     </footer>
-</body>
+  </body>
 </html>
