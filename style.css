@@ -1,8 +1,8 @@
- body {
+body {
   margin: 0;
   padding: 0;
-  font-family: 'Times New Roman', Times, serif
- }
+  font-family: "Times New Roman", Times, serif;
+}
 
 .startbody {
   overflow: hidden; /*stopt horizontal scroll*/
@@ -11,7 +11,8 @@
   width: 100%;
 }
 
-.start-bg {   /*background*/
+.start-bg {
+  /*background*/
   position: absolute;
   top: 50%;
   left: 50%;
@@ -24,11 +25,6 @@
   filter: brightness(30%);
 }
 
-.brightness-100 {
-  filter: brightness(100%);
-}
-
-
 .content {
   position: absolute;
   top: 42%;
@@ -36,7 +32,7 @@
   transform: translate(-50%); /*centreert de button */
   text-align: center; /* welcome text position*/
   color: #fff;
-  font-family:'Times New Roman', Times, serif
+  font-family: "Times New Roman", Times, serif;
 }
 
 .btn {
@@ -57,59 +53,76 @@
 
 /* home */
 body {
-    background-image: url("images/homebg.jpg");
-    background-attachment: fixed;
+  background-image: url("images/homebg.jpg");
+  background-attachment: fixed;
 }
 
-p, h1, h2{
-    text-align: center;
-    font-size: 22px;
+p,
+h1,
+h2,
+ul,
+ol {
+  text-align: center;
+  font-size: 22px;
+}
+.whitespace ul,
+.whitespace ol {
+  text-align: left;
 }
 
-h1{
-    font-size: 40px;
+h1 {
+  font-size: 40px;
 }
 
-h2{
-    font-size: 30px;
+h2 {
+  font-size: 30px;
 }
 .synopsis {
-    background-color: hsla(0, 0%, 96%, 0.904);
-    width: 35%;
-    padding: 1px;
-    padding-bottom: 10px;
-    margin: 10vh auto;
-    display: block;
-    border-radius: 8px;
+  background-color: hsla(0, 0%, 96%, 0.904);
+  width: 35%;
+  padding: 1px;
+  padding-bottom: 10px;
+  margin: 10vh auto;
+  display: block;
+  border-radius: 8px;
 }
 .homeimages a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
-.homeimages{
-    display: flex;
-    justify-content: center;
-    background-color: hsla(0, 0%, 96%, 0.904);
-    width: 60%;
-    margin:auto;
-    border-radius: 8px;
+.homeimages {
+  display: flex;
+  justify-content: center;
+  background-color: hsla(0, 0%, 96%, 0.904);
+  width: 60%;
+  margin: auto;
+  border-radius: 8px;
 }
 
 .homeimages img {
-    
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    margin: 30px;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin: 30px;
 }
 
 #imgbighover {
-  transition: transform 0.5s ease-out
+  transition: transform 0.5s ease-out;
 }
 
-#imgbighover:hover, .bighovertext:hover + #imgbighover{
-
+#imgbighover:hover,
+.bighovertext:hover + #imgbighover {
   transform: scale(1.05) rotate(5deg);
+}
+
+/*characters*/
+
+.amirbio {
+  display: flex;
+}
+
+.amirbio img {
+  transform: scale(0.7);
 }
 
 /*General layout*/
@@ -128,11 +141,16 @@ a:-webkit-any-link {
   text-decoration: none;
 }
 
-
-.whitespace p, .whitespace h2{
+.whitespace p,
+.whitespace h2,
+.whitespace h3 {
   text-align: left;
   padding: 15px;
   text-decoration: none;
+}
+
+.whitespace h3 {
+  padding-top: 0px;
 }
 
 .whitespace img {
@@ -146,49 +164,48 @@ a:-webkit-any-link {
 }
 
 /* header */
-.main-nav ul { /*head bar*/
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    background-color: #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 8vh;
-    opacity: 95%;
+.main-nav ul {
+  /*head bar*/
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 8vh;
+  opacity: 95%;
+}
 
-  }
-  
-  .main-nav ul li { /* button verspreiding */
-    position: relative;
-  }
-  
-  .main-nav ul li a {
-    display: block;
-    padding: 3vh 40px;
-    color: whitesmoke;
-    text-decoration: none;
-    text-align: center;
-  }
-  
-  .main-nav ul li:hover {
-    height: 8vh;
-    background-color: #1d1d1d;
+.main-nav ul li {
+  /* button verspreiding */
+  position: relative;
+}
 
-  }
-  
-  .main-menu, .sub-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #444;
-    box-sizing: border-box;
-  }
-  
-  .main-nav ul li:hover .main-menu, .sub-dropdown:hover .sub-menu {
-    display: block;
-    
-  }
-  
- 
+.main-nav ul li a {
+  display: block;
+  padding: 3vh 40px;
+  color: whitesmoke;
+  text-decoration: none;
+  text-align: center;
+}
+
+.main-nav ul li:hover {
+  height: 8vh;
+  background-color: #1d1d1d;
+}
+
+.main-menu,
+.sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  box-sizing: border-box;
+}
+
+.main-nav ul li:hover .main-menu,
+.sub-dropdown:hover .sub-menu {
+  display: block;
+}
